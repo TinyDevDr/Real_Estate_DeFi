@@ -1,554 +1,195 @@
-Contribution: 2021-10-13 20:00
+![bloc_spot-2](./frontend/img/bloc_spot-2.gif)
+# BLOC HOME
 
-Contribution: 2021-10-13 20:01
+### Smart Contract Real Estate Application - SMARTER, SECURE & FASTER
+---
+BlocHome is a platform that provides services for sell (through auction), rent and real estate launch in the property registry using smart contracts
+  * Develop a digital real estate blockchain platform for the management of luxury home, apartments, investment property,  property rentals, and sales.
+  * Utilize Digital Token Technology to manage the distribution of real estate smart contacts.
+  * Utilize computer algorithms, blockchain, location data, predictive analytics and more to help investors locate and sell properties, find renters and maximize their real estate investments.
 
-Contribution: 2021-10-13 20:02
+#### Property Management Process Details
+---
+* Property Listing Management
+* Auctions
+* Token Management
+* Smart Contracts
+    * Lease / Rental 
+    * Owner Tenant / Seller / Buyer
+    * Security Deposit
+* Online Web Portal
 
-Contribution: 2021-10-13 21:03
+
+#### Financial Transaction Management
+---
+
+##### Blockchain Technology
+
+Blockchain Technology has been adopted and adapted for use by the commercial real estate (CRE) industry. Blockchain technology can potentially transform core CRE operations such as property transactions like purchase, sale, financing, leasing, and management transactions.
+
+Blockchain technology has impacted the real estate industry in a variety of ways, including offering a new means for buyers and sellers to connect with one another.
+
+Blockchain could be used to cut intermediaries out of the real estate transaction process, thereby reducing costs.
+
+This technology could also help to codify the practice of fractional ownership of real estate.
+
+##### Digital Wallet - Metamask
+
+* Software that manages private keys and converts it to blockchain address format.
+* It’s a so-called digital wallet that runs as a Chrome extension. It stores Ethereum assets and shows transactions.
+
+##### Ethereum Gas
+
+Gas refers to the fee, or pricing value, required to successfully conduct a transaction or execute a contract on the Ethereum blockchain platform.
+* Every single operation that takes part in Ethereum, be it a simple transaction, or a smart contract, or even an ICO takes some amount of gas.
+* Incentivizes nodes for participating in the network and computing jobs to deploy smart contracts.
+* Miners get paid an amount in Ether which is equivalent to the total amount of gas it took them to execute a complete operation. In that way it motivates the mines to compute jobs
+* Motivates developers to deploy efficient code to optimize the use of deployed protocols
+
+##### Smart Contracts
+
+A smart contract is an agreement that needs no external action to execute the terms of the contract. Once the conditions for its execution have been met, the smart contract completes the agreed actions automatically. 
 
-Contribution: 2021-10-13 18:04
+Blockchain technology maintains a record of transactions is maintained across several computers linked in a peer-to-peer network. This allows smart contracts to be self-executing, with the terms of the agreement between buyer and seller directly written into lines of code existing on a decentralized network.
 
-Contribution: 2021-10-13 21:05
+Ethereum allows developers to write smart contracts which define the EVM* instructions. (Ethereum Virtual Machine, Decentralized database – allows functional code to be distributed along the decentralized set of nodes.)
 
-Contribution: 2021-10-13 20:06
+Smart contracts render transactions traceable, transparent, and irreversible.
 
-Contribution: 2021-10-13 21:07
+Ethereum Real Estate Contracts are Flexible as contracts may be written so that any number of final sales prices, reductions in price, or increases, can be triggered based on specific events agreed to by the parties.
 
-Contribution: 2021-10-16 22:00
+##### Digital Tokens - Non-Fungible Tokens(NFT)
 
-Contribution: 2021-10-16 21:01
+1. **[ERC721 Standard](https://eips.ethereum.org/EIPS/eip-721)**
 
-Contribution: 2021-10-16 19:02
+      ERC-721 is a free, open standard that describes how to build non-fungible or unique tokens on the Ethereum blockchain. While most tokens are fungible (every token is the same as every other token), ERC-721 tokens are all unique.
+    
+    * ERC-721 defines a minimum interface a smart contract must implement to allow unique tokens to be managed, owned, and traded. It does not mandate a standard for token metadata or restrict adding supplemental functions.
+    
+    * Conduct Auctions on ERC721 standard and record payout information on blockchain
+    
+    
+2. **[ERCX - EIP 2615](https://github.com/kohshiba/ERC-X)**
 
-Contribution: 2021-10-16 20:03
+      An extension to ERC721 (NFTs) to support rental and mortgage functions.
+      
+      With ERC2615, NFT owners will be able to rent out their NFTs and take out a mortgage by collateralizing their NFTs. For example, this standard can apply to:
 
-Contribution: 2021-10-18 20:00
+    * Virtual items (in-game assets, virtual artwork, etc.)
+    * Physical items (houses, automobiles, etc.)
+    * Intellectual property rights
+    * DAO membership tokens
+    
+     NFT developers are also able to easily integrate ERC2615 since it is fully backwards-compatible with the ERC721 standard. 
+     
+     One notable point is that the person who has the right to use an application is not the owner but the user (i.e. tenant).
 
-Contribution: 2021-10-18 18:01
+#### Development Platforms
 
-Contribution: 2021-10-18 22:02
+![dev_platforms](./frontend/img/dev_platforms.png)
 
-Contribution: 2021-10-18 21:03
+   The development platform Back-end interface includes: 
 
-Contribution: 2021-10-18 20:04
+**[InterPlanetary File System (IPFS)](https://pinata.cloud/)** 
+    is a protocol and peer-to-peer network for storing and sharing data in a distributed file system. IPFS uses content-addressing to uniquely identify each file in a global namespace connecting all computing devices.
+IPFS  is talking to metamask, ganache, remix, and running solidity, python (Web3.py) , and github pages for the front-end interfacing.
 
-Contribution: 2021-10-18 22:05
+**[MetaMask](https://metamask.io/)**
+    is a browser plugin that allows users to make Ethereum transactions through regular websites. It facilitates the adoption of Ethereum because it bridges the gap between the user interfaces for Ethereum
+    
+**[Web3.py](https://github.com/ethereum/web3.py)** 
+    helps in access Ethereum node from Python.
+    
+    
+#### Housing Model Analysis - Machine Learning Model
+---
+Trains Models to to identify, categorize and value Housing Sales Price per sqft and Price. 
+    
+* **Data Highlights - AMES, IOWA Assessor's Home Sales(2006 - 2010)**
+      
+     * 2930 Rows * 82 columns (23 nominal, 23 ordinal, 14 discrete, and 20 continuous variables)
+     * Nominal Variables : Identifies the type of dwelling involved in the sale and zoning classification
+     * Ordinal: General shape of property and type of utilities
+     * Discrete: Original construction dates
+     * Continuous: Masonry veneer area in square feet
 
-Contribution: 2021-10-18 21:06
+* **Cluster Analysis (K = Number of Clusters in the dataset = 7)**
+      
+     * Sale Price by Price / Sqft by Cluster
+     
+    <img src="./frontend/img/cluster.png" width="500"/><img src="./frontend/img/cluster_profile.png" width="500"/>
+    
+* **Regression Model to Predict - Sales Price** 
+    
+    Sales Price
+    <img src="./frontend/img/reg_model_sp.png" width="500"/>
+    
+    Sale Price per Sqft
+    <img src="./frontend/img/reg_model_sqft.png" width="500"/>
+    
+* **Deep Learning Model - Predict Sales Price**
 
-Contribution: 2021-10-18 21:07
+    Sales Price
+    <img src="./frontend/img/dl_sp.png" width="500"/>
+    
+    Sale Price per Sqft
+    <img src="./frontend/img/dl_spft.png" width="500"/>
 
-Contribution: 2021-10-18 19:08
+* **Model Comparison / Model Selection**
 
-Contribution: 2021-10-18 22:09
+![model_cmp](./frontend/img/model_cmp.png)
 
-Contribution: 2021-10-19 22:00
+### DEMO 
+---
 
-Contribution: 2021-10-19 18:01
+[BLOC HOME WEBSITE](https://maitree7.github.io/BlocHome_DeFi/)
 
-Contribution: 2021-10-19 20:02
+With Admin Rights (Property Listing)
 
-Contribution: 2021-10-19 18:03
+Owner / Leasor  
 
-Contribution: 2021-10-19 18:04
+Tenant / Leasee
 
-Contribution: 2021-10-19 22:05
 
-Contribution: 2021-10-19 22:06
 
-Contribution: 2021-10-19 22:07
 
-Contribution: 2021-10-21 20:00
 
-Contribution: 2021-10-21 20:01
 
-Contribution: 2021-10-21 22:02
 
-Contribution: 2021-10-21 22:03
 
-Contribution: 2021-10-21 22:04
 
-Contribution: 2021-10-22 21:00
 
-Contribution: 2021-10-22 22:01
 
-Contribution: 2021-10-23 20:00
 
-Contribution: 2021-10-23 19:01
 
-Contribution: 2021-10-23 21:02
 
-Contribution: 2021-10-26 19:00
 
-Contribution: 2021-10-30 21:00
+    
+    
 
-Contribution: 2021-11-02 22:00
+      
+      
 
-Contribution: 2021-11-02 22:01
 
-Contribution: 2021-11-02 18:02
 
-Contribution: 2021-11-02 19:03
 
-Contribution: 2021-11-02 18:04
 
-Contribution: 2021-11-02 21:05
 
-Contribution: 2021-11-02 19:06
 
-Contribution: 2021-11-02 22:07
 
-Contribution: 2021-11-03 18:00
+     
 
-Contribution: 2021-11-03 20:01
+      
+    
+            
 
-Contribution: 2021-11-03 22:02
 
-Contribution: 2021-11-03 21:03
 
-Contribution: 2021-11-05 19:00
 
-Contribution: 2021-11-05 18:01
 
-Contribution: 2021-11-05 21:02
 
-Contribution: 2021-11-05 19:03
 
-Contribution: 2021-11-07 19:00
 
-Contribution: 2021-11-07 20:01
 
-Contribution: 2021-11-07 18:02
 
-Contribution: 2021-11-07 18:03
-
-Contribution: 2021-11-07 20:04
-
-Contribution: 2021-11-07 20:05
-
-Contribution: 2021-11-07 18:06
-
-Contribution: 2021-11-07 19:07
-
-Contribution: 2021-11-07 21:08
-
-Contribution: 2021-11-07 22:09
-
-Contribution: 2021-11-09 20:00
-
-Contribution: 2021-11-09 18:01
-
-Contribution: 2021-11-09 19:02
-
-Contribution: 2021-11-09 22:03
-
-Contribution: 2021-11-11 20:00
-
-Contribution: 2021-11-11 22:01
-
-Contribution: 2021-11-11 20:02
-
-Contribution: 2021-11-11 22:03
-
-Contribution: 2021-11-11 20:04
-
-Contribution: 2021-11-11 21:05
-
-Contribution: 2021-11-12 19:00
-
-Contribution: 2021-11-12 19:01
-
-Contribution: 2021-11-12 18:02
-
-Contribution: 2021-11-12 18:03
-
-Contribution: 2021-11-12 22:04
-
-Contribution: 2021-11-12 20:05
-
-Contribution: 2021-11-12 19:06
-
-Contribution: 2021-11-12 18:07
-
-Contribution: 2021-11-12 21:08
-
-Contribution: 2021-11-13 20:00
-
-Contribution: 2021-11-14 20:00
-
-Contribution: 2021-11-14 21:01
-
-Contribution: 2021-11-22 21:00
-
-Contribution: 2021-11-22 22:01
-
-Contribution: 2021-11-22 22:02
-
-Contribution: 2021-11-23 22:00
-
-Contribution: 2021-11-23 18:01
-
-Contribution: 2021-11-23 21:02
-
-Contribution: 2021-11-23 21:03
-
-Contribution: 2021-11-23 22:04
-
-Contribution: 2021-11-23 19:05
-
-Contribution: 2021-11-23 20:06
-
-Contribution: 2021-11-23 20:07
-
-Contribution: 2021-11-23 20:08
-
-Contribution: 2021-11-23 21:09
-
-Contribution: 2021-11-24 19:00
-
-Contribution: 2021-11-24 21:01
-
-Contribution: 2021-11-24 22:02
-
-Contribution: 2021-11-24 18:03
-
-Contribution: 2021-11-24 20:04
-
-Contribution: 2021-11-24 20:05
-
-Contribution: 2021-11-24 18:06
-
-Contribution: 2021-11-28 21:00
-
-Contribution: 2021-11-28 20:01
-
-Contribution: 2021-11-28 18:02
-
-Contribution: 2021-11-28 21:03
-
-Contribution: 2021-11-28 20:04
-
-Contribution: 2021-11-28 20:05
-
-Contribution: 2021-11-28 18:06
-
-Contribution: 2021-11-30 18:00
-
-Contribution: 2021-11-30 22:01
-
-Contribution: 2021-11-30 22:02
-
-Contribution: 2021-11-30 22:03
-
-Contribution: 2021-11-30 20:04
-
-Contribution: 2021-11-30 20:05
-
-Contribution: 2021-11-30 20:06
-
-Contribution: 2021-12-01 21:00
-
-Contribution: 2021-12-01 21:01
-
-Contribution: 2021-12-01 22:02
-
-Contribution: 2021-12-01 18:03
-
-Contribution: 2021-12-01 19:04
-
-Contribution: 2021-12-01 21:05
-
-Contribution: 2021-12-01 18:06
-
-Contribution: 2021-12-01 20:07
-
-Contribution: 2021-12-04 20:00
-
-Contribution: 2021-12-04 19:01
-
-Contribution: 2021-12-04 18:02
-
-Contribution: 2021-12-04 20:03
-
-Contribution: 2021-12-04 18:04
-
-Contribution: 2021-12-06 19:00
-
-Contribution: 2021-12-06 19:01
-
-Contribution: 2021-12-06 22:02
-
-Contribution: 2021-12-06 19:03
-
-Contribution: 2021-12-06 19:04
-
-Contribution: 2021-12-09 20:00
-
-Contribution: 2021-12-09 18:01
-
-Contribution: 2021-12-10 21:00
-
-Contribution: 2021-12-10 22:01
-
-Contribution: 2021-12-10 20:02
-
-Contribution: 2021-12-10 19:03
-
-Contribution: 2021-12-10 18:04
-
-Contribution: 2021-12-10 22:05
-
-Contribution: 2021-12-10 20:06
-
-Contribution: 2021-12-11 21:00
-
-Contribution: 2021-12-11 22:01
-
-Contribution: 2021-12-12 22:00
-
-Contribution: 2021-12-12 20:01
-
-Contribution: 2021-12-12 20:02
-
-Contribution: 2021-12-12 21:03
-
-Contribution: 2021-12-12 18:04
-
-Contribution: 2021-12-12 21:05
-
-Contribution: 2021-12-12 19:06
-
-Contribution: 2021-12-12 21:07
-
-Contribution: 2021-12-12 21:08
-
-Contribution: 2021-12-12 21:09
-
-Contribution: 2021-12-14 21:00
-
-Contribution: 2021-12-14 19:01
-
-Contribution: 2021-12-14 19:02
-
-Contribution: 2021-12-14 18:03
-
-Contribution: 2021-12-16 22:00
-
-Contribution: 2021-12-16 22:01
-
-Contribution: 2021-12-16 18:02
-
-Contribution: 2021-12-17 21:00
-
-Contribution: 2021-12-17 18:01
-
-Contribution: 2021-12-18 19:00
-
-Contribution: 2021-12-18 22:01
-
-Contribution: 2021-12-18 19:02
-
-Contribution: 2021-12-19 18:00
-
-Contribution: 2021-12-19 19:01
-
-Contribution: 2021-12-19 21:02
-
-Contribution: 2021-12-20 18:00
-
-Contribution: 2021-12-20 19:01
-
-Contribution: 2021-12-20 20:02
-
-Contribution: 2021-12-21 21:00
-
-Contribution: 2021-12-26 19:00
-
-Contribution: 2021-12-26 19:01
-
-Contribution: 2021-12-26 20:02
-
-Contribution: 2021-12-26 20:03
-
-Contribution: 2021-12-26 22:04
-
-Contribution: 2021-12-26 22:05
-
-Contribution: 2021-12-26 19:06
-
-Contribution: 2021-12-26 22:07
-
-Contribution: 2021-12-26 20:08
-
-Contribution: 2021-12-26 19:09
-
-Contribution: 2021-12-27 22:00
-
-Contribution: 2021-12-27 20:01
-
-Contribution: 2021-12-27 20:02
-
-Contribution: 2021-12-27 22:03
-
-Contribution: 2021-12-27 22:04
-
-Contribution: 2021-12-27 20:05
-
-Contribution: 2021-12-27 19:06
-
-Contribution: 2021-12-27 21:07
-
-Contribution: 2021-12-28 19:00
-
-Contribution: 2021-12-28 20:01
-
-Contribution: 2021-12-28 18:02
-
-Contribution: 2021-12-28 19:03
-
-Contribution: 2021-12-28 22:04
-
-Contribution: 2021-12-29 18:00
-
-Contribution: 2021-12-29 21:01
-
-Contribution: 2021-12-29 19:02
-
-Contribution: 2021-12-29 18:03
-
-Contribution: 2021-12-30 18:00
-
-Contribution: 2021-12-30 22:01
-
-Contribution: 2021-12-30 20:02
-
-Contribution: 2021-12-30 18:03
-
-Contribution: 2021-12-30 19:04
-
-Contribution: 2021-12-31 18:00
-
-Contribution: 2021-12-31 20:01
-
-Contribution: 2021-12-31 18:02
-
-Contribution: 2021-12-31 18:03
-
-Contribution: 2021-12-31 18:04
-
-Contribution: 2021-12-31 22:05
-
-Contribution: 2021-12-31 21:06
-
-Contribution: 2021-12-31 18:07
-
-Contribution: 2022-01-02 22:00
-
-Contribution: 2022-01-02 18:01
-
-Contribution: 2022-01-02 21:02
-
-Contribution: 2022-01-02 19:03
-
-Contribution: 2022-01-02 22:04
-
-Contribution: 2022-01-03 22:00
-
-Contribution: 2022-01-05 22:00
-
-Contribution: 2022-01-05 20:01
-
-Contribution: 2022-01-05 20:02
-
-Contribution: 2022-01-06 21:00
-
-Contribution: 2022-01-06 20:01
-
-Contribution: 2022-01-06 19:02
-
-Contribution: 2022-01-06 21:03
-
-Contribution: 2022-01-06 22:04
-
-Contribution: 2022-01-06 22:05
-
-Contribution: 2022-01-06 21:06
-
-Contribution: 2022-01-06 20:07
-
-Contribution: 2022-01-07 19:00
-
-Contribution: 2022-01-07 22:01
-
-Contribution: 2022-01-07 20:02
-
-Contribution: 2022-01-07 22:03
-
-Contribution: 2022-01-07 22:04
-
-Contribution: 2022-01-07 20:05
-
-Contribution: 2022-01-07 18:06
-
-Contribution: 2022-01-07 19:07
-
-Contribution: 2022-01-08 22:00
-
-Contribution: 2022-01-08 19:01
-
-Contribution: 2022-01-08 22:02
-
-Contribution: 2022-01-12 20:00
-
-Contribution: 2022-01-12 19:01
-
-Contribution: 2022-01-13 19:00
-
-Contribution: 2022-01-13 20:01
-
-Contribution: 2022-01-13 18:02
-
-Contribution: 2022-01-13 21:03
-
-Contribution: 2022-01-13 20:04
-
-Contribution: 2022-01-13 19:05
-
-Contribution: 2022-01-13 21:06
-
-Contribution: 2022-01-17 21:00
-
-Contribution: 2022-01-18 22:00
-
-Contribution: 2022-01-19 22:00
-
-Contribution: 2022-01-19 18:01
-
-Contribution: 2022-01-19 19:02
-
-Contribution: 2022-01-19 19:03
-
-Contribution: 2022-01-23 22:00
-
-Contribution: 2022-01-23 22:01
-
-Contribution: 2022-01-23 21:02
-
-Contribution: 2022-01-23 18:03
-
-Contribution: 2022-01-23 20:04
-
-Contribution: 2022-01-27 20:00
-
-Contribution: 2022-01-27 18:01
-
-Contribution: 2022-01-27 20:02
-
-Contribution: 2022-01-27 21:03
-
-Contribution: 2022-01-27 22:04
-
-Contribution: 2022-01-27 22:05
-
-Contribution: 2022-01-27 20:06
 
